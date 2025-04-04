@@ -1,2 +1,43 @@
-/mvnw text eol=lf
-*.cmd text eol=crlf
+# Handle line endings
+* text=auto
+
+# Java files
+*.java text diff=java
+
+# Spring Boot config files
+*.yml text
+*.yaml text
+*.properties text
+
+# Templates (FreeMarker, HTML)
+*.ftl text
+*.html text
+
+# Markdown and documentation
+*.md text
+*.txt text
+
+# Scripts
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# Build files
+*.xml text
+*.gradle text
+*.pom text
+
+# Binary files (treat as binary)
+*.jar binary
+*.war binary
+*.zip binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+
+# Ignore IntelliJ and Eclipse project files from being linguistically detected
+*.iml linguist-vendored
+*.classpath linguist-vendored
+*.project linguist-vendored
